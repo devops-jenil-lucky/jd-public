@@ -1,0 +1,14 @@
+name: Deploy Development Food Exchange
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to this branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show CI/CD Trigger Message
+        run: echo "CI/CD pipeline triggered for Main branch"

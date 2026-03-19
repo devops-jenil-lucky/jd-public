@@ -1,0 +1,14 @@
+name: Deploy Development Food Exchange
+
+on:
+  push:
+    branches:
+      - realase
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show CI/CD Trigger Message
+        run: echo "CI/CD pipeline triggered for realase branch"
